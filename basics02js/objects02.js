@@ -73,12 +73,12 @@ const navbar = (company)=>{
 navbar(company = "hemant")
 
 //  api format both key and values are in double inverted commas,""
-{
-    "name " :hemant 
-    ,
-    "age" : "18",
-    "price" : "999"
-}
+// {
+//     "name " :hemant 
+//     ,
+//     "age" : "18",
+//     "price" : "999"
+// }
 //or 
 [
     {},
