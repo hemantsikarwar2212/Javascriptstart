@@ -6,7 +6,7 @@ const mySym = Symbol("key1")
 
 const jsUser = {
     name:"hemant",
-    "full name" : "SIkarwar",
+    "full name" : " hemant Sikarwar",
     [mySym] : "mukey1"
     ,age : 18,
     location : "Jaipur"
@@ -21,6 +21,15 @@ console.log(jsUser["full name"]);
 console.log(jsUser[mySym]);
 
 jsUser.email = "hemant@google.com"
-Object.freeze(jsUser)
+// Object.freeze(jsUser)
+jsUser.greeting = function(){
+    console.log("hlo js user ");
 
-0
+}
+jsUser.greetingone = function(){
+        console.log(`hlo js user , ${this["full name"]}`);
+
+        }
+
+console.log(jsUser.greeting());
+console.log(jsUser.greetingone());
