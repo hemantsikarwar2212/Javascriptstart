@@ -48,10 +48,40 @@ const users = [
     {}
 ]
 users[1].age
-console.log(instaUser);
-console.log(Object.keys(instaUser));
-console.log(Object.values(instaUser));
-console.log(Object.entries(instaUser));
+// console.log(instaUser);
+// console.log(Object.keys(instaUser));
+// console.log(Object.values(instaUser));
+// console.log(Object.entries(instaUser));
 
-console.log(instaUser.hasOwnProperty('isLoggedIn'));
+// console.log(instaUser.hasOwnProperty('isLoggedIn'));
 
+////////////////////////////object destructuring ///////////////////////
+const course = {
+    coursename : "js in hindi",
+    duration : "2 weeks",
+    price : "666"
+
+
+}
+console.log(course.price);
+const {coursename : csn} = course
+console.log(csn);
+
+const navbar = (company)=>{
+
+}
+navbar(company = "hemant")
+
+//  api format both key and values are in double inverted commas,""
+{
+    "name " :hemant 
+    ,
+    "age" : "18",
+    "price" : "999"
+}
+//or 
+[
+    {},
+    {},
+    {}
+]
