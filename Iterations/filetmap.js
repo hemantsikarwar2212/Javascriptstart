@@ -26,12 +26,12 @@ const newnum = nums.map((num) => num*10)
 console.log(newnum);
 // // REDUCE//
  const mynums = [1,2,8]
-// const myTotal = mynums.reduce(function(acc,currval){
-//     return acc + currval
-// },0)
+const myTotal = mynums.reduce(function(acc,currval){
+    return acc + currval
+},0)
 // console.log(myTotal);
 
-const myTotal = mynums.reduce((acc,curr)=> acc+curr,0)
+// const myTotal = mynums.reduce((acc,curr)=> acc+curr,0)
 console.log(myTotal);
 
 const shopppingCart = [
@@ -49,4 +49,5 @@ const shopppingCart = [
     }
 ]
 
-const PriceTOpay = shopppingCart.reduce(()=> (acc + item.price) ,0)
+const PriceTOpay = shopppingCart.reduce((acc,item)=> (acc + item.price) ,0)
+console.log(PriceTOpay);
