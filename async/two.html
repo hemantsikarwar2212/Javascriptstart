@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>learing javascript </h1>
+    <button id="start"> start</button>
+    <button id="stop"> stop</button>
+</body>
+<script>
+    const myName = function(){
+        console.log("hemant bhai");
+    }
+    const timeout = setInterval(myName, 1000)
+    document.querySelector('#start').addEventListener('click' , function(e){
+    
+    })
+    document.querySelector('#stop').addEventListener('click' , function(e){
+    clearTimeout(timeout)
+    })
+
+</script>
+</html>
