@@ -35,3 +35,4 @@ console.log(userOne);
 console.log(userTwo);
 //  when we use new keyword new instance is created
 //  new keyword calls constructor function and packs the argument
+ 
